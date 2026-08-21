@@ -682,6 +682,20 @@
             min-height: 150px;
             resize: vertical;
         }
+
+        .form-success {
+            display: none;
+            background: #e8f5e9;
+            color: #1b5e20;
+            border: 1px solid #a5d6a7;
+            border-radius: var(--border-radius);
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .form-success.active {
+            display: block;
+        }
         
         /* Responsive Design */
         @media (max-width: 1200px) {
@@ -888,10 +902,10 @@
                 <div class="news-grid">
                     <div class="news-card">
                         <div class="news-image">
-                            <img src="buses.jpg" alt="Bus Schedule">
+                            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Bus Schedule">
                         </div>
                         <div class="news-content">
-                            <div class="news-date">26'-27'</div>
+                            <div class="news-date">25'-26'</div>
                             <h3>Chestnut Impact Bus Route </h3>
                             <p>Bus 1 Boston Rd @Brandon Ave - 6:28 am / 3:58pm</p>
                             <p>Bus 1 Beacon Circle @Beacon Terrace - 6:35am / 3:50pm</p>
@@ -1017,13 +1031,14 @@
                                 <p>Mrs. Staine  focuses on student well-being and believes that we must teach the whole child.This means academics and social emotional learning.</p>
                                 <p>Email: staines@springfieldpublicschools.com</p>
                             </div>
-                             <div class="card">
-                             <div class="card-body">
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
                                 <h3>Bonnie Ramos-Gonzalez</h3>
                                 <p><strong>Dean of Students</strong></p>
                                 <p>Mrs. Ramos  focuses on student well-being and disciplinary matters to maintain a positive school environment.</p>
                                 <p>Email: ramos-gonzalezb@springfieldpublicschools.com</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -1056,7 +1071,7 @@
                                 <h3>Athletic Facilities</h3>
                             </div>
                             <div class="card-body">
-                                <p>Features include a gymnasium, soccer field, tennis court, and basktball courts for student athletes.</p>
+                                <p>Features include a gymnasium, soccer field, tennis court, and basketball courts for student athletes.</p>
                             </div>
                         </div>
                     </div>
@@ -1175,13 +1190,13 @@
             <div class="container">
                 <div class="calendar-container">
                     <div class="calendar-header">
-                        <h3>2025 School Calendar</h3>
+                        <h3 id="calendar-year-title">2026 School Calendar</h3>
                         <div class="year-selector">
                             <label for="year-select">Select Year:</label>
                             <select id="year-select">
-                                <option>2024</option>
-                                <option selected>2025</option>
-                                <option>2026</option>
+                                <option>2025</option>
+                                <option selected>2026</option>
+                                <option>2027</option>
                             </select>
                         </div>
                     </div>
@@ -1196,42 +1211,48 @@
         <section class="page-content">
             <div class="container">
                 <div class="content-section">
-                    <h2>Key Dates for 2025-2026</h2>
+                    <h2>Key Dates for 2026-2027</h2>
                     
                     <div class="card">
                         <div class="card-body">
-                            <h3>Fall Semester</h3>
+                            <h3>Fall Semester 2026</h3>
                             <ul>
-                                <li><strong>August 25:</strong> First day of school</li>
-                                <li><strong>September 1:</strong> Labor Day (No School)</li>
-                                <li><strong>September 9:</strong> Teacher Professional Day (No School)</li>
-                                <li><strong>October 13:</strong> Columbus Day/Indigenous Peoples' Day (District Closed)</li>
-                                <li><strong>November 4:</strong> Teacher Professional Day (No School)</li>
+                                <li><strong>August 24:</strong> First day of school (Grades 1-12)</li>
+                                <li><strong>September 1:</strong> Teacher Professional Day (No School)</li>
+                                <li><strong>September 2:</strong> First day of school for Kindergarten</li>
+                                <li><strong>September 7:</strong> Labor Day (District Closed)</li>
+                                <li><strong>September 14:</strong> First day of school for Pre-Kindergarten</li>
+                                <li><strong>October 12:</strong> Columbus Day/Indigenous Peoples' Day (District Closed)</li>
+                                <li><strong>November 3:</strong> Teacher Professional Day (No School)</li>
                                 <li><strong>November 11:</strong> Veterans Day (District Closed)</li>
-                                <li><strong>November 27-28:</strong> Thanksgiving Break</li>
-                                <li><strong>December 19:</strong> Half Day</li>
-                                <li><strong>December 20 - January 5:</strong> Winter Break</li>
+                                <li><strong>November 25-27:</strong> Thanksgiving Break (District closed Nov. 26-27; schools reopen Nov. 30)</li>
+                                <li><strong>December 21 - January 5:</strong> Winter Break</li>
                             </ul>
                         </div>
                     </div>
                     
                     <div class="card" style="margin-top: 30px;">
                         <div class="card-body">
-                            <h3>Spring Semester</h3>
+                            <h3>Spring Semester 2027</h3>
                             <ul>
+                                <li><strong>January 6:</strong> Teacher Professional Day (No School)</li>
                                 <li><strong>January 7:</strong> Classes Resume</li>
-                                <li><strong>January 19:</strong> Martin Luther King Jr. Day (No School)</li>
-                                 <li><strong>February 16</strong> Presidents' Day</li>
-                                <li><strong>February 17-20:</strong> Mid-Winter Break</li>
-                                <li><strong>April 3:</strong> Distric Closed</li>
-                                <li><strong>April 20:</strong> Patriots' Day (District Closed)</li>
-                                <li><strong>April 21-24:</strong> Spring Break</li>
-                                <li><strong>May 25:</strong> Memorial Day (No School)</li>
-                                <li><strong>June 19:</strong> Juneteenth (District Closed)</li>
-                                <li><strong>June 25:</strong> Half Day-Last day of school (Tentative Date)</li>
+                                <li><strong>January 18:</strong> Martin Luther King Jr. Day (No School)</li>
+                                <li><strong>February 15:</strong> Presidents' Day</li>
+                                <li><strong>February 16-19:</strong> Mid-Winter Break (schools reopen Feb. 22)</li>
+                                <li><strong>April 19:</strong> Patriots' Day (District Closed)</li>
+                                <li><strong>April 20-23:</strong> Spring Break (schools reopen Apr. 26)</li>
+                                <li><strong>May 31:</strong> Memorial Day (No School)</li>
+                                <li><strong>June 18:</strong> Juneteenth Observed (District Closed)</li>
+                                <li><strong>June 25:</strong> Last day of school (Tentative Date)</li>
                             </ul>
                         </div>
                     </div>
+
+                    <p style="margin-top: 20px; font-size: 0.9rem; color: #6c757d;">
+                        Dates reflect the Springfield Public Schools 2026-2027 district calendar. Snow days or other closures may shift the last day of school. Please confirm final dates on the
+                        <a href="https://www.springfieldpublicschools.com/calendar" target="_blank" rel="noopener">Springfield Public Schools calendar page</a>.
+                    </p>
                 </div>
                 
                 <div class="content-section">
@@ -1242,7 +1263,7 @@
                                 <h3>Back to School Night</h3>
                             </div>
                             <div class="card-body">
-                                <p><strong>Date:</strong> September 4, 2025</p>
+                                <p><strong>Date:</strong> September 2026 (date TBD)</p>
                                 <p><strong>Time:</strong> 6:00 PM - 8:00 PM</p>
                                 <p>Meet your child's teachers and learn about classroom expectations.</p>
                             </div>
@@ -1410,7 +1431,7 @@
                 </div>
                 
                 <div class="content-section">
-                    <h2>Parent-Teacher Involvment (PTI)</h2>
+                    <h2>Parent-Teacher Involvement (PTI)</h2>
                     <p>Our PTI is a important part of the Chestnut community, organizing events, fundraising, and advocating for our students. All parents are encouraged to join!</p>
                     
                     <div class="card">
@@ -1571,7 +1592,7 @@
                             </li>
                             <li>
                                 <span><strong>Sebsastian Hurt</strong> - 8th Grade </span>
-                                <span>Hurts@springfieldpublicschools.com</span>
+                                <span>hurts@springfieldpublicschools.com</span>
                             </li>
                               <li>
                                 <span><strong>Carolina Garcia-Reyes</strong> - Math Interventionist </span>
@@ -1603,7 +1624,7 @@
                         <ul class="staff-list">
                              <li>
                                 <span><strong>Shauna Staine-Gaye</strong></span>
-                                <span>Staines@springfieldpublicschools.com</span>
+                                <span>staines@springfieldpublicschools.com</span>
                             </li>
                               <li>
                                 <span><strong>Megan Finn</strong></span>
@@ -1629,7 +1650,7 @@
                             
                              <li>
                                 <span><strong>Kimberly Smith</strong></span>
-                                <span>Smithk@springfieldpublicschools.com</span>
+                                <span>smithk@springfieldpublicschools.com</span>
                             </li>
                              <li>
                                 <span><strong>Casilda Jones-Perry</strong></span>
@@ -1659,7 +1680,7 @@
                             </li>
                              <li>
                                 <span><strong>Pete Mendez</strong> - Adjustment Counselor</span>
-                                <span>orengog@springfieldpublicschools.com</span>
+                                <span>mendezp@springfieldpublicschools.com</span>
                             </li>
                              <li>
                                 <span><strong>Jareth Staine </strong> - Student Support</span>
@@ -1684,7 +1705,7 @@
                             </li>
                              <li>
                                 <span><strong>Katiana Nardone </strong> - Band </span>
-                                <span>mendelsohnd@springfieldpublicschools.com</span>
+                                <span>nardonek@springfieldpublicschools.com</span>
                              </li>
                              <li>
                                 <span><strong>Terrell Williams </strong> - PE/Health </span>
@@ -1749,26 +1770,30 @@
                             <div class="card-body">
                                 <h2>Contact Form</h2>
                                 <p>Have a question? Send us a message and we'll respond as soon as possible.</p>
+
+                                <div class="form-success" id="form-success">
+                                    Thank you! Your message has been received. We'll get back to you soon.
+                                </div>
                                 
-                                <div class="contact-form">
+                                <form class="contact-form" id="contact-form">
                                     <div class="form-group">
                                         <label for="name">Your Name</label>
-                                        <input type="text" id="name" required>
+                                        <input type="text" id="name" name="name" required>
                                     </div>
                                     
                                     <div class="form-group">
                                         <label for="email">Email Address</label>
-                                        <input type="email" id="email" required>
+                                        <input type="email" id="email" name="email" required>
                                     </div>
                                     
                                     <div class="form-group">
                                         <label for="phone">Phone Number</label>
-                                        <input type="tel" id="phone">
+                                        <input type="tel" id="phone" name="phone">
                                     </div>
                                     
                                     <div class="form-group">
                                         <label for="subject">Subject</label>
-                                        <select id="subject">
+                                        <select id="subject" name="subject">
                                             <option>General Inquiry</option>
                                             <option>Admissions</option>
                                             <option>Academic Questions</option>
@@ -1780,11 +1805,11 @@
                                     
                                     <div class="form-group">
                                         <label for="message">Message</label>
-                                        <textarea id="message" required></textarea>
+                                        <textarea id="message" name="message" required></textarea>
                                     </div>
                                     
                                     <button type="submit" class="btn">Send Message</button>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -1809,7 +1834,7 @@
                             </div>
                             <div class="card-body">
                                 <p><strong>Contact:</strong> Dan Mendelsohn</p>
-                                <p><strong>Email:</strong>mendelsohnd@springfieldpublicschools.com</p>
+                                <p><strong>Email:</strong> mendelsohnd@springfieldpublicschools.com</p>
         
                             </div>
                         </div>
@@ -1878,7 +1903,7 @@
             </div>
             
             <div class="copyright">
-                <p>&copy; 2025 Chestnut Middle School. All Rights Reserved.</p>
+                <p>&copy; 2026 Chestnut Middle School. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -1904,22 +1929,50 @@
         
         // Calendar generation
         const calendarGrid = document.getElementById('calendar-grid');
+        const calendarYearTitle = document.getElementById('calendar-year-title');
         const months = ['January', 'February', 'March', 'April', 'May', 'June', 
                        'July', 'August', 'September', 'October', 'November', 'December'];
         const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
         
-        // Major school holidays and events for 2025
-        const holidays = {
-            0: {1: "New Year's Day"}, // January
-            4: {26: "Memorial Day"}, // May
-            6: {4: "Independence Day"}, // July
-            8: {1: "Labor Day"}, // September
-            10: {27: "Thanksgiving", 28: "Thanksgiving Break"}, // November
-            11: {24: "Christmas Break", 25: "Christmas Day"} // December
+        // Springfield Public Schools holidays/closures, keyed by calendar year
+        // Sourced from the SPS 2026-2027 district calendar (verify at springfieldpublicschools.com/calendar)
+        const holidaysByYear = {
+            2025: {
+                0: {1: "New Year's Day"},
+                4: {26: "Memorial Day"},
+                6: {4: "Independence Day"},
+                8: {1: "Labor Day"},
+                10: {27: "Thanksgiving", 28: "Thanksgiving Break"},
+                11: {24: "Christmas Break", 25: "Christmas Day"}
+            },
+            2026: {
+                0: {1: "New Year's Day"},
+                3: {20: "Patriots' Day"},
+                4: {25: "Memorial Day"},
+                5: {19: "Juneteenth"},
+                6: {4: "Independence Day"},
+                7: {24: "First Day of School"},
+                8: {1: "Teacher PD Day - No School", 2: "First Day - Kindergarten", 7: "Labor Day", 14: "First Day - Pre-K"},
+                9: {12: "Columbus Day / Indigenous Peoples' Day"},
+                10: {3: "Teacher PD Day - No School", 11: "Veterans Day", 25: "Thanksgiving Break Begins", 26: "Thanksgiving", 27: "Thanksgiving Break"},
+                11: {21: "Winter Break Begins", 24: "Winter Break", 25: "Christmas Day", 31: "Winter Break"}
+            },
+            2027: {
+                0: {1: "Winter Break", 5: "Winter Break Ends", 6: "Teacher PD Day - No School", 18: "Martin Luther King Jr. Day"},
+                1: {15: "Presidents' Day", 16: "Mid-Winter Break Begins", 17: "Mid-Winter Break", 18: "Mid-Winter Break", 19: "Mid-Winter Break"},
+                3: {19: "Patriots' Day", 20: "Spring Break Begins", 21: "Spring Break", 22: "Spring Break", 23: "Spring Break"},
+                4: {31: "Memorial Day"},
+                5: {18: "Juneteenth Observed", 25: "Last Day of School (Tentative)"},
+                6: {4: "Independence Day"}
+            }
         };
         
-        function generateCalendar() {
+        function generateCalendar(year) {
+            const holidays = holidaysByYear[year] || {};
             calendarGrid.innerHTML = '';
+            calendarYearTitle.textContent = year + ' School Calendar';
+
+            const today = new Date();
             
             for (let month = 0; month < 12; month++) {
                 const monthDiv = document.createElement('div');
@@ -1942,8 +1995,8 @@
                 });
                 
                 // Get first day and number of days in month
-                const firstDay = new Date(2025, month, 1).getDay();
-                const daysInMonth = new Date(2025, month + 1, 0).getDate();
+                const firstDay = new Date(year, month, 1).getDay();
+                const daysInMonth = new Date(year, month + 1, 0).getDate();
                 
                 // Add empty cells for days before the first day
                 for (let i = 0; i < firstDay; i++) {
@@ -1959,7 +2012,7 @@
                     dateCell.textContent = day;
                     
                     // Check if weekend
-                    const dayOfWeek = new Date(2025, month, day).getDay();
+                    const dayOfWeek = new Date(year, month, day).getDay();
                     if (dayOfWeek === 0 || dayOfWeek === 6) {
                         dateCell.classList.add('weekend');
                     }
@@ -1970,8 +2023,8 @@
                         dateCell.title = holidays[month][day];
                     }
                     
-                    // Check if today (June 5, 2025)
-                    if (month === 5 && day === 5) {
+                    // Check if today
+                    if (year === today.getFullYear() && month === today.getMonth() && day === today.getDate()) {
                         dateCell.classList.add('today');
                     }
                     
@@ -1983,8 +2036,8 @@
             }
         }
         
-        // Initialize calendar
-        generateCalendar();
+        // Initialize calendar to the current 2026-2027 school year
+        generateCalendar(2026);
         
         // Page navigation
         const navLinks = document.querySelectorAll('.nav-link');
@@ -2013,9 +2066,23 @@
             });
         });
         
-        // Year selector functionality
+        // Year selector functionality - regenerates the calendar for the chosen year
         document.getElementById('year-select').addEventListener('change', function() {
-            alert('Calendar for ' + this.value + ' would be displayed. This demo shows 2025 only.');
+            generateCalendar(parseInt(this.value, 10));
+        });
+
+        // Contact form submission
+        const contactForm = document.getElementById('contact-form');
+        const formSuccess = document.getElementById('form-success');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // In a live deployment, this is where the form data would be sent
+            // to a backend endpoint (e.g. via fetch()) or an email service.
+            formSuccess.classList.add('active');
+            contactForm.reset();
+            formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
     </script>
 </body>
